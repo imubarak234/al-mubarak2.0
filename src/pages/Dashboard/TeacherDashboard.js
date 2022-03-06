@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookOpen, faClock, faFileAlt, faClipboardList, faClipboardCheck, faChalkboard, faUserGraduate } from '@fortawesome/fontawesome-free-solid';
 import ProgressBar from 'react-customizable-progressbar';
 import {Link} from "react-router-dom";
+import $ from 'jquery'; 
 
 // Revenue Chart
 const data = {

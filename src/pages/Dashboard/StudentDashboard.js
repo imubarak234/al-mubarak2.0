@@ -9,6 +9,7 @@ import { faChalkboard, faUserGraduate, faBookOpen, faClock, faFileAlt, faClipboa
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import ProgressBar from 'react-customizable-progressbar';
 import {Link} from "react-router-dom";
+import $ from 'jquery'; 
 
 // Revenue Chart
 const data = {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 // import { history } from "../../src/_components/_helpers";
 import { AdminLayoutRoute, LoginLayoutRoute } from "./routerLayout";
 
@@ -123,7 +123,7 @@ class RouterComponent extends React.Component {
     render() {
         return (
             <Router basename={`${config.publicPath}`} >
-                <Switch>
+                <Routes>
                 
                     {/* Login Layout */}
                     <Route exact path="/" component={Login} />
@@ -131,7 +131,7 @@ class RouterComponent extends React.Component {
                     <Route path="/forgot-password" component={ForgotPassword} />
                     <Route path="/error" component={Error} />                   
                     
-                </Switch>
+                </Routes>
 
                 <div className="main-wrapper">
                     {/* <Sidebar/> */}
@@ -141,7 +141,7 @@ class RouterComponent extends React.Component {
 
                         <div className="page-wrapper">
                             <div className="content container-fluid">
-                                <Switch>
+                                <Routes>
                                     <Route path="/dashboard" component={Dashboard} />
                                     <Route path="/student-dashboard" component={StudentDashboard} />
                                     <Route path="/teacher-dashboard" component={TeacherDashboard} />
@@ -244,7 +244,7 @@ class RouterComponent extends React.Component {
                                     {/* Inbox Module */}
                                     <Route path="/inbox" component={Inbox} />
                                     <Route path="/compose" component={Compose} />
-                                </Switch>
+                                </Routes>
                             </div>
                             <Route render={(props) => <Footer {...props} />} />
                         </div>
